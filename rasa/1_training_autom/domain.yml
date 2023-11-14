@@ -1,0 +1,46 @@
+version: '3.1'
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- a_ask_about_qualifications
+- inquire_about_charter_fee_inclusions
+- ask_about_payment_and_cancellation
+- ask_about_security_deposit
+- inquire_about_tenant_obligations
+responses:
+  utter_greet:
+  - text: Hey! How are you right now ?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye now domas
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa mijooooooo.
+  utter_a_ask_about_qualifications:
+  - text: Typically, a valid boating license is required for yacht charter, or you
+      can opt to hire a skilled skipper.
+  utter_inquire_about_charter_fee_inclusions:
+  - text: The charter fee includes the yacht, its equipment, and insurance. Costs
+      like fuel, port fees, and provisioning are extra.
+  utter_ask_about_payment_and_cancellation:
+  - text: Payments are structured as an initial deposit followed by a final payment.
+      The cancellation policy includes graduated penalties as the charter date approaches.
+  utter_ask_about_security_deposit:
+  - text: A security deposit is required to cover any potential damages or unforeseen
+      expenses, which is refundable after post-charter inspection.
+  utter_inquire_about_tenant_obligations:
+  - text: As a tenant, you're responsible for the yacht's upkeep during the charter
+      and must return it in the same condition as at the start.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

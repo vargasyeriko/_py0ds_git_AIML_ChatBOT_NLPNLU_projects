@@ -1,0 +1,24 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: User greets and bot responds
+  steps:
+  - user: |
+      hi
+  - bot: |
+      Hello! How can I assist you today?
+  
+- story: User books a flight and bot responds
+  steps:
+  - user: |
+      I want to book a flight to New York on June 15
+  - bot: |
+      [Action: action_book_flight]
+  
+- story: User inquires about flight status and bot responds
+  steps:
+  - user: |
+      Is my flight to Tokyo on time?
+  - bot: |
+      [Action: action_inquire_flight_status]

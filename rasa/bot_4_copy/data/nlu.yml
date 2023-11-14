@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey there
+    - greetings
+    - good morning
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - farewell
+
+- intent: book_flight
+  examples: |
+    - book a flight to [New York](destination) on [June 15](departure_date)
+    - I want to travel to [Paris](destination) from [London](departure_date) to [Berlin](return_date)
+
+- intent: inquire_flight_status
+  examples: |
+    - Is my flight to [Tokyo](destination) on time?
+    - Check the status of my flight from [Chicago](departure_date) to [Miami](destination)

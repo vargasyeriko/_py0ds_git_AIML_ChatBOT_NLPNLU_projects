@@ -1,0 +1,27 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - book_flight
+  - inquire_flight_status
+
+entities:
+  - destination
+  - departure_date
+  - return_date
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_ask_destination:
+    - text: "Sure, where would you like to fly to?"
+  utter_ask_departure_date:
+    - text: "When do you plan to depart?"
+  utter_ask_return_date:
+    - text: "When will you return?"
+
+actions:
+  - action_book_flight
+  - action_inquire_flight_status
